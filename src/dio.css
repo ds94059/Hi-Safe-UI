@@ -1,0 +1,9 @@
+.tablestyle{
+    border:3px #cccccc solid;
+    width:100%;
+    height:250px;
+    text-align: center;
+}
+.lightblue{
+    background-color: lightblue;
+}
