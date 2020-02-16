@@ -36,18 +36,18 @@ class Monitor extends React.Component{
                             <div class="wid33">
                                 <div class="left">
                                     <p><span class="block">VCORE</span> <input type="text" value={vol_vcore} readonly="readonly" class="background_gray"/> mV</p>
-                                    <p><span class="block"> 2V5</span> <input type="text" value={vol_vbat}  readonly="readonly" class="background_gray"/> mV</p>
-                                    <p><span class="block"> 3V3</span> <input type="text" value={vol_12v}    readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block"> 2V5</span> <input type="text" value={vol_2v5}  readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block"> 3V3</span> <input type="text" value={vol_3v3}    readonly="readonly" class="background_gray"/> mV</p>
                                 </div>
                                 <div class="middle">
-                                    <p><span class="block">VBAT</span> <input type="text" value={vol_vcore} readonly="readonly" class="background_gray"/> mV</p>
-                                    <p><span class="block"> 5V</span> <input type="text" value={vol_vbat}  readonly="readonly" class="background_gray"/> mV</p>
-                                    <p><span class="block"> 5VSB</span> <input type="text" value={vol_12v}    readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block">VBAT</span> <input type="text" value={vol_vbat} readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block"> 5V</span> <input type="text" value={vol_5v} readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block"> 5VSB</span> <input type="text" value={vol_5vsb}  readonly="readonly" class="background_gray"/> mV</p>
                                 </div>                     
                                 <div class="right">
-                                    <p><span class="block">12V</span> <input type="text" value={vol_vcore} readonly="readonly" class="background_gray"/> mV</p>
-                                    <p><span class="block"> DIMM</span> <input type="text" value={vol_vbat}  readonly="readonly" class="background_gray"/> mV</p>
-                                    <p><span class="block"> 3VSB</span> <input type="text" value={vol_12v}    readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block">12V</span> <input type="text" value={vol_12v} readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block"> DIMM</span> <input type="text" value={vol_dimm} readonly="readonly" class="background_gray"/> mV</p>
+                                    <p><span class="block"> 3VSB</span> <input type="text" value={vol_3vsb} readonly="readonly" class="background_gray"/> mV</p>
                                 </div>
                             </div>
                     
