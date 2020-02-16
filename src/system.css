@@ -1,0 +1,29 @@
+.blueword{
+    font-weight: bold;
+    font-size: larger;
+    color:rgb(77, 127, 207);
+}
+.wid70{
+    width:69%;
+    display: inline;
+}
+.wid30{
+    width:30%;
+    display: inline;
+}
+.wid50{
+    width:40%;
+    display: inline;
+}
+.left{
+    width:60%;
+    float:left;
+}
+.right{
+    width:40%;
+    float:right;
+}
+
+@media (max-width:800px) {
+    .wid70,.wid30,.left,.right{width:100%;}
+}
