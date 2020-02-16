@@ -33,6 +33,7 @@
 .buttonset > .button{
     width:100px;
 }
+
 @media (max-width:800px){
     .watchset{width:480px}
 }
