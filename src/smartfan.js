@@ -1,18 +1,21 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Icon from './Icon';
 import Upbar from './upbar';
 import './smartfan.css';
+import InputRange from 'react-input-range';
+import 'react-input-range/lib/css/index.css';
+
 class SmartFan extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {sped_adj: 0}
-        //設定該function的this為class本身
-        this.changeState = this.changeState.bind(this)
-    }
-    changeState(event){
-        //使用setState將值寫到nameVal中
-        this.setState({sped_adj:event.target.value})
-    }
+    constructor(props) {
+        super(props);
+        this.state = {
+            spd_adj: 128,
+            lspd_temp: 0,
+            fspd_temp: 0,       
+          };
+      }
+    
     render(){
         const rpm_cpu=2667, rpm_chipset=0, rpm_system=0,
         temp_cpu=36,temp_chipset=35
@@ -20,8 +23,8 @@ class SmartFan extends React.Component{
         return(
             <div>
                 <Icon/>
-                <Upbar/>
-                <div>                    
+                <Upbar/>              
+                <div>         
                     <fieldset class="wid33">
                         <legend class="blueword">Monitored Fan</legend>
                         <table class="radiobox">
@@ -57,16 +60,40 @@ class SmartFan extends React.Component{
                             <img src = "./image/fansetting.png"/>
                         </table>
                     </div>
-                        <fieldset class="rightfan">
-                            <legend class="blueword">Fan Speed Adjustion</legend>
-                            <p>Speed Adjust</p>
-                            <input id="sped_adj" name="sped_adj" type="range" min="0" max="255" step="1" value={this.state.sped_adj} onchange={this.changeState}/> {this.state.sped_adj}<br/>
-                            <p>Low Speed Temperature</p>
-                            <input type="range" min="0" max="100" step="1" /><br/>
-                            <p>Full Speed Temperature</p>
-                            <input type="range" min="0" max="100" step="1" /><br/>
-                        </fieldset> 
-                    
+                    <fieldset class="rightfan">
+                      <legend class="blueword">Fan Speed Adjustion</legend>
+                        <p>Speed Adjust</p>                            
+                        <form className="form">
+                          <InputRange
+                                maxValue={255}
+                                minValue={0}
+                                value={this.state.spd_adj}
+                                onChange={spd_adj => this.setState({ spd_adj })} 
+                          />
+                        </form>
+                        <p>Low Speed Temperature</p>
+                        <br/>
+                        <form className="form">
+                          <InputRange
+                            maxValue={100}
+                            minValue={0}
+                            value={this.state.lspd_temp}
+                            onChange={lspd_temp => this.setState({ lspd_temp })}
+                            disabled
+                          />  
+                        </form> 
+                        <p>Full Speed Temperature</p>
+                        <br/>
+                        <form className="form">
+                          <InputRange
+                            maxValue={100}
+                            minValue={0}
+                            value={this.state.fspd_temp}
+                            onChange={fspd_temp => this.setState({ fspd_temp })}
+                            disabled 
+                          />
+                        </form>
+                      </fieldset> 
                 </div>
             </div>
         )

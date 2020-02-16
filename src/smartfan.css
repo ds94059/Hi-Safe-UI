@@ -8,24 +8,16 @@
     width:32.5%;
     float: left;
     text-align: center;
-    height:250px;
+    height:310px;
 }
 .rightfan{
     width:65.5%;
     float:left;
-    height: 250px;
+    height: 310px;
 }
 .radiobox{
     width:100%;
     text-align: center;
-    position: relative; 
-            top: 50%;   
-            left: 50%;   
-            -webkit-transform: translate(-50%, -50%);   
-            -moz-transform: translate(-50%, -50%);   
-            -ms-transform: translate(-50%, -50%);   
-            -o-transform: translate(-50%, -50%);   
-            transform: translate(-50%, -50%);
 }
 .fansetimg{
     width:100%;
@@ -53,7 +45,17 @@ input[type="range"] {
     width:80%;
   }
 
+
+.form {  
+    @media (min-width: 800px) {
+      max-width: 60%;
+    }
+  }
+  
+.input-range {
+    margin-bottom: 30px;
+}
 @media (max-width:800px) {
-    .wid33,.rightfan {width:100%;}
+    .wid33,.rightfan,.radiobox {width:100%;}
     .fansetimg,.leftfan{display: none;}
 }

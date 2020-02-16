@@ -1,0 +1,27 @@
+.form {
+  
+    @media (min-width: 800px) {
+      max-width: 60%;
+    }
+  }
+  
+.input-range {
+    margin-bottom: 30px;
+}
+
+.backlight{
+    margin-left:  200px;
+    margin-right: 200px;
+}
+.backlight >p{
+    color:gray;
+    font-weight: bold;
+}
+@media (max-width:800px) {
+    .wid33,.rightfan {width:100%;}
+    .fansetimg,.leftfan{display: none;}
+    .backlight{
+        margin-left:20px;
+        margin-right: 20px;
+    }
+}
