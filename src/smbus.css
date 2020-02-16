@@ -1,0 +1,22 @@
+.wholeleft{
+    width:49.5%;
+    height:500px;
+    display: inline;
+}
+
+
+.upright{
+    width:49.5%;
+    height:300px;
+    display: inline;
+}
+
+.downright{
+    width:49.5%;
+    height:200px;
+    display: inline;
+}
+
+.supa{
+    width:49.5%;
+}
