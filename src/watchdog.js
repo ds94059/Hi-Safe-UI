@@ -15,33 +15,31 @@ class WatchDog extends React.Component{
                 <Icon/>
                 <Upbar/>
                 <div>
-                    <fieldset>
+                    <fieldset class="watchdog">
                             <legend class="blueword">WatchDog Timer</legend>                            
-                            <div class="blueword">
-                                <span class="watchdog_block">Count Mode</span>
-                                <input type="radio" name="location"></input><font size="2" color="black">Second</font>
-                                <input type="radio" name="location"></input><font size="2" color="black">Minute</font>
-                            </div>
-                            <div class="blueword">
-                                <span class="watchdog_block">Countdown Time</span>
-                                <select id = "ComboBxMonth" >
-                                    {list}
-                                </select>
-                                second(s)
-                            </div>
-                            <div class="blueword">
-                            <span class="watchdog_block"><input type="checkbox"></input>Auto Reload</span>
-                                in every
-                                <select id = "ComboBxMonth" >
-                                    {list}
-                                </select>
-                                sec.
-                            </div>
-                            <div>
-                                <div class="background_white">0 minutes 0 seconds remaining</div>
-                            </div>
-                            
+                            <table class="watchset">                                
+                                <tr class="blueword">
+                                    <td><span class="watchdog_block">Count Mode</span></td>
+                                    <td><input type="radio" name="location"></input><font size="2" color="black">Second</font>
+                                    <input type="radio" name="location"></input><font size="2" color="black">Minute</font></td>
+                                </tr>
+                                <br></br><br></br>
+                                <tr class="blueword">
+                                    <td><span class="watchdog_block">Countdown Time</span></td>
+                                    <td><select id = "ComboBxMonth" >{list}</select>second(s)</td>
+                                </tr>
+                                <br></br><br></br>
+                                <tr class="blueword">
+                                    <td><span class="watchdog_block"><input type="checkbox"></input>Auto Reload</span></td>
+                                    <td>in every<select id = "ComboBxMonth" >{list}</select>sec.</td>        
+                                </tr>
+                            </table>
+                            <div class="background_white">0 minutes 0 seconds remaining</div>
                     </fieldset>
+                    <div class="buttonset">
+                        <input type="button" value="Set" class="button"/>
+                        <input type="button" value="Clear" class="button"/>
+                    </div>
                 </div>
             </div>
         )
