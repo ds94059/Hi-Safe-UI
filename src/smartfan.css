@@ -8,12 +8,12 @@
     width:32.5%;
     float: left;
     text-align: center;
-    height:250px;
+    height:310px;
 }
 .rightfan{
     width:65.5%;
     float:left;
-    height: 250px;
+    height: 310px;
 }
 .radiobox{
     width:100%;
@@ -45,6 +45,16 @@ input[type="range"] {
     width:80%;
   }
 
+
+.form {  
+    @media (min-width: 800px) {
+      max-width: 60%;
+    }
+  }
+  
+.input-range {
+    margin-bottom: 30px;
+}
 @media (max-width:800px) {
     .wid33,.rightfan,.radiobox {width:100%;}
     .fansetimg,.leftfan{display: none;}
