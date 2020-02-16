@@ -18,19 +18,19 @@ class WatchDog extends React.Component{
                     <fieldset>
                             <legend class="blueword">WatchDog Timer</legend>                            
                             <div class="blueword">
-                                <span class="block">Count Mode</span>
+                                <span class="watchdog_block">Count Mode</span>
                                 <input type="radio" name="location"></input><font size="2" color="black">Second</font>
                                 <input type="radio" name="location"></input><font size="2" color="black">Minute</font>
                             </div>
                             <div class="blueword">
-                                <span class="block">Countdown Time</span>
+                                <span class="watchdog_block">Countdown Time</span>
                                 <select id = "ComboBxMonth" >
                                     {list}
                                 </select>
                                 second(s)
                             </div>
                             <div class="blueword">
-                            <span class="block"><input type="checkbox"></input>Auto Reload</span>
+                            <span class="watchdog_block"><input type="checkbox"></input>Auto Reload</span>
                                 in every
                                 <select id = "ComboBxMonth" >
                                     {list}
