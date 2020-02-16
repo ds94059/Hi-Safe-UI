@@ -15,15 +15,23 @@
     width:40%;
     display: inline;
 }
-.left{
+.display > .left{
     width:60%;
     float:left;
 }
-.right{
+.display > .right{
     width:40%;
-    float:right;
+    float:left;
+}
+.ram > .left{
+    width:60%;
+    float:left;
+}
+.ram > .right{
+    width:40%;
+    float:left;
 }
 
 @media (max-width:800px) {
-    .wid70,.wid30,.left,.right{width:100%;}
+    .wid70,.wid30,.display > .left,.display > .right{width:100%;}
 }

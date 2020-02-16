@@ -1,4 +1,26 @@
-.gray_border{
-    background-color: rgb(177, 175, 175);
+.background_gray{
+    display:inline-block;
+    background-color: rgb(214, 212, 212);
     border: 1px solid black;
+    text-align:right;
+    width: 100px;
+}
+.wid33 > .left{
+    width:33%;
+    float:left;
+}
+.wid33 > .middle{
+    width:33%;
+    float:left;
+}
+.wid33 > .right{
+    width:33%;
+    float: left;
+}
+.block{
+    display: inline-block;
+    width:60px;
+}
+@media (max-width:800px) {
+    .wid33 > .left, .wid33 > .middle,.wid33 > .right{width:100%;}
 }

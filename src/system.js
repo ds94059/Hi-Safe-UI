@@ -32,30 +32,33 @@ class System extends React.Component{
                 <div>
                     <fieldset>
                         <legend class="blueword">Display Information</legend>
-                        
-                            <div class="left">
-                                <p>Device: {device}</p>
-                                <p>Resolution: {resolution}</p>
-                                <p>Pixel: {pixel }bit</p>
-                                <p>Refresh Rate: {refresh_rate} Hz</p>                                
+                            <div class="display">
+                                <div class="left">
+                                    <p>Device: {device}</p>
+                                    <p>Resolution: {resolution}</p>
+                                    <p>Pixel: {pixel }bit</p>
+                                    <p>Refresh Rate: {refresh_rate} Hz</p>                                
+                                </div>
+                                <div class="right"><img src="./image/CPU icon.png"></img></div>
                             </div>
-                            <div class="right"><img src="./image/CPU icon.png"></img></div>
                     </fieldset>
                 </div>
                 <div>
                     <fieldset>
                         <legend class="blueword">RAM Information</legend>                        
-                            <div class="left">
-                                <p>Type: {type}</p>
-                                <p>Speed: {speed} mHz</p>
-                                <p>Module: {ram_module}</p>
-                                <p>Bank Label: BANK {label}</p>
-                            </div>
-                            <div class="right">
-                                <p>Size: {size} MB</p>
-                                <p>Manufacturer: {manufac}</p>
-                                <p>Data Width: {ram_width} bit</p>
-                                <p>Total Width: {total_width} bit</p>          
+                            <div class="ram">
+                                <div class="left">
+                                    <p>Type: {type}</p>
+                                    <p>Speed: {speed} mHz</p>
+                                    <p>Module: {ram_module}</p>
+                                    <p>Bank Label: BANK {label}</p>
+                                </div>
+                                <div class="right">
+                                    <p>Size: {size} MB</p>
+                                    <p>Manufacturer: {manufac}</p>
+                                    <p>Data Width: {ram_width} bit</p>
+                                    <p>Total Width: {total_width} bit</p>          
+                                </div>
                             </div>
                     </fieldset>
                 </div>                
