@@ -74,7 +74,7 @@ justify-content: center;
 flex-wrap: wrap;
 vertical-align: middle;
 align-items: center; 
-position: absolute;
+position: relative;
             top: 50%;   
             left: 50%;   
             -webkit-transform: translate(-50%, -50%);   
@@ -101,7 +101,7 @@ width: 25%;
 }
 .wid500
 {
-  width:500px;
+  width:450px;
   text-align: center;
 }
 .tab { 

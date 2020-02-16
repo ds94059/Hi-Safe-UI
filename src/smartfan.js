@@ -13,29 +13,36 @@ class SmartFan extends React.Component{
                 <div>                    
                     <fieldset class="wid33">
                         <legend class="blueword">Monitored Fan</legend>
-                        <table>
-                            3option selectbox
+                        <table class="radiobox">
+                            <fieldset class="textleft">
+                            <input type="radio" name="fanid" value="0"></input><font size="2" color="black">Fan0</font><br/>
+                            <input type="radio" name="fanid" value="1"></input><font size="2" color="black">Fan1</font><br/>
+                            <input type="radio" name="fanid" value="2"></input><font size="2" color="black">Fan2</font><br/>
+                            </fieldset>
+                            <input type="radio" name="autoormanual" value="0"></input><font size="2" color="black">Auto</font>
+                            <input type="radio" name="autoormanual" value="1"></input><font size="2" color="black">Manual</font>
                         </table>
+                        
                     </fieldset>                  
                     <fieldset class="wid33">
                         <legend class="blueword">Fan Speed</legend>
-                        <table>
-                            <p><span class="block">CPU</span> <input type="text" value={rpm_cpu} readonly="readonly" class="background_gray"/> RPM</p>
-                            <p><span class="block">Chipset</span> <input type="text" value={rpm_chipset} readonly="readonly" class="background_gray"/> RPM</p>
-                            <p><span class="block">System</span> <input type="text" value={rpm_system} readonly="readonly" class="background_gray"/> RPM</p>
+                        <table class="fullwid">
+                            <p><span class="myblock">CPU</span> <input type="text" value={rpm_cpu} readonly="readonly" class="background_gray"/> RPM</p>
+                            <p><span class="myblock">Chipset</span> <input type="text" value={rpm_chipset} readonly="readonly" class="background_gray"/> RPM</p>
+                            <p><span class="myblock">System</span> <input type="text" value={rpm_system} readonly="readonly" class="background_gray"/> RPM</p>
                         </table>
                     </fieldset>
                     <fieldset class="wid33">
                         <legend class="blueword">Temperature</legend>
-                        <table>
-                            <p><span class="block">CPU</span> <input type="text" value={temp_cpu} readonly="readonly" class="background_gray"/> °C</p>
-                            <p><span class="block">Chipset</span> <input type="text" value={temp_chipset} readonly="readonly" class="background_gray"/> °C</p>
+                        <table class="fullwid">
+                            <p><span class="myblock">CPU</span> <input type="text" value={temp_cpu} readonly="readonly" class="background_gray"/> °C</p>
+                            <p><span class="myblock">Chipset</span> <input type="text" value={temp_chipset} readonly="readonly" class="background_gray"/> °C</p>
                         </table>
                     </fieldset>
                 </div>
                 <div>
                     <div className="leftfan">
-                        <table>
+                        <table class="fansetimg">
                             <img src = "./image/fansetting.png"/>
                         </table>
                     </div>

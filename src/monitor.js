@@ -15,7 +15,7 @@ class Monitor extends React.Component{
                 <div>                    
                     <fieldset class="wid70">
                         <legend class="blueword">Fan Speed</legend>
-                        <table>
+                        <table class="fullwid">
                             <p><span class="block">CPU</span> <input type="text" value={rpm_cpu} readonly="readonly" class="background_gray"/> RPM</p>
                             <p><span class="block">Chipset</span> <input type="text" value={rpm_chipset} readonly="readonly" class="background_gray"/> RPM</p>
                             <p><span class="block">System</span> <input type="text" value={rpm_system} readonly="readonly" class="background_gray"/> RPM</p>
@@ -23,7 +23,7 @@ class Monitor extends React.Component{
                     </fieldset>                  
                     <fieldset class="wid30">
                         <legend class="blueword">Temperature</legend>
-                        <table>
+                        <table class="fullwid">
                             <p><span class="block">CPU</span> <input type="text" value={temp_cpu} readonly="readonly" class="background_gray"/> °C</p>
                             <p><span class="block">Chipset</span> <input type="text" value={temp_chipset} readonly="readonly" class="background_gray"/> °C</p>
                             <p><span class="block">System</span> <input type="text" value={temp_system} readonly="readonly" class="background_gray"/> °C</p>
