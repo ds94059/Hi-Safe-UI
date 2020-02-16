@@ -3,9 +3,20 @@ import Icon from './Icon';
 import Upbar from './upbar';
 import './smartfan.css';
 class SmartFan extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {sped_adj: 0}
+        //設定該function的this為class本身
+        this.changeState = this.changeState.bind(this)
+    }
+    changeState(event){
+        //使用setState將值寫到nameVal中
+        this.setState({sped_adj:event.target.value})
+    }
     render(){
         const rpm_cpu=2667, rpm_chipset=0, rpm_system=0,
         temp_cpu=36,temp_chipset=35
+
         return(
             <div>
                 <Icon/>
@@ -48,8 +59,11 @@ class SmartFan extends React.Component{
                     </div>
                         <fieldset class="rightfan">
                             <legend class="blueword">Fan Speed Adjustion</legend>
-                            <input type="range" min="0" max="255" step="1" /><br/>
+                            <p>Speed Adjust</p>
+                            <input id="sped_adj" name="sped_adj" type="range" min="0" max="255" step="1" value={this.state.sped_adj} onchange={this.changeState}/> {this.state.sped_adj}<br/>
+                            <p>Low Speed Temperature</p>
                             <input type="range" min="0" max="100" step="1" /><br/>
+                            <p>Full Speed Temperature</p>
                             <input type="range" min="0" max="100" step="1" /><br/>
                         </fieldset> 
                     
