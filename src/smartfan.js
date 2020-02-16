@@ -34,12 +34,12 @@ class SmartFan extends React.Component{
                     </fieldset>
                 </div>
                 <div>
-                    <div className="left">
+                    <div className="leftfan">
                         <table>
                             <img src = "./image/fansetting.png"/>
                         </table>
                     </div>
-                        <fieldset class="right">
+                        <fieldset class="rightfan">
                             <legend class="blueword">Fan Speed Adjustion</legend>
                             <input type="range" min="0" max="255" step="1" /><br/>
                             <input type="range" min="0" max="100" step="1" /><br/>
