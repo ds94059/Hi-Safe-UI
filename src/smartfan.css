@@ -1,0 +1,22 @@
+.wid33{
+    display: inline;
+    width:32.5%;
+    height:170px;
+}
+
+.left{
+    width:32.5%;
+    float: left;
+    text-align: center;
+    height:170px;
+}
+.right{
+    width:65.5%;
+    float:left;
+    height: 170px;
+    text-align: center;
+}
+@media (max-width:800px) {
+    .wid33,.left,.right {width:100%;}
+    
+}
